@@ -1,0 +1,12 @@
+- You can’t invoke extension methods on variables of type dynamic.
+    dynamic d = '2';
+    print(d.parseInt()); // Runtime exception: NoSuchMethodError
+
+- Extension methods do work with Dart’s type inference. The following code is fine because the variable v is inferred to have type String:
+    var v = '2';
+    print(v.parseInt()); // Output: 2 
+
+
+- All enums automatically extend the Enum class. They are also sealed, meaning they cannot be subclassed, implemented, mixed in, or otherwise explicitly instantiated.
+
+- Dart also allows enum declarations to declare classes with fields, methods, and const constructors which are limited to a fixed number of known constant instances.
