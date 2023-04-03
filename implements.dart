@@ -1,34 +1,19 @@
-abstract class X {
-  int a = 5;
+class X {
   X() {
     print("called interface constructor");
   }
-  void printNameA();
+  external void printName();
 }
 
-abstract class Y {
-  Y() {
-    print("called interface constructor");
-  }
-  void printNameB();
-}
-
-class A implements X, Y {
-  void printNameA() {
+class A implements X {
+  void printName() {
     print('ABC');
   }
-
-  void printNameB() {
-    print('ABC');
-  }
-
-  @override
-  int a = 10;
 }
 
 void main() {
   A a = A();
-  a.printNameA();
+  a.printName();
 }
 
 

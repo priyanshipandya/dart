@@ -5,7 +5,7 @@ abstract class Myname {
   void name();
 }
 
-class child implements Myname {
+class child extends Myname {
   void name() {
     print("My name is XYZ");
   }
