@@ -1,8 +1,8 @@
 abstract class Temp {
   var data;
   Temp() {}
-  factory Temp.name() {
-    return Temp();
+  //factory Temp.name() {
+    //return Temp();
   }
 
   void display(int data) {
