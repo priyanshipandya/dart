@@ -1,12 +1,16 @@
 void main() {
   try {
-    int a = 10 ~/ 5;
-    print(a);
-    // } on IntegerDivisionByZeroException {
-    //   print("Division by zero");
+    throw UserDefinedException();
   } catch (e) {
-    print(e);
+    e as UserDefinedException;
+    e.foo();
   } finally {
     print("This will always execute");
+  }
+}
+
+class UserDefinedException implements Exception {
+  void foo() {
+    print("I am foo");
   }
 }

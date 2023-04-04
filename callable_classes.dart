@@ -10,8 +10,8 @@ class Callable {
 }
 
 void main() {
-  var call = Callable();
-  String displayname = call("ABC", "MNO", "XYZ");
+  var c = Callable();
+  String displayname = c("ABC", "MNO", "XYZ");
   print(displayname);
-  call.display();
+  c.display();
 }
