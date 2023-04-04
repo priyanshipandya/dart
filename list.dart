@@ -8,9 +8,9 @@ void main() {
     [1, 1, 1],
     [2, 2, 2]
   ];
-  ln.addAll(name);
-  ln.insertAll(3, name);
-  ln[2] = 'pqr';
+  // ln.addAll(name);
+  // ln.insertAll(3, name);
+  // ln[2] = 'pqr';
   print(ln.reversed);
   print(ln.length);
   print("is Empty:${ln.isEmpty}");
