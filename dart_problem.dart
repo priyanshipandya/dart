@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  int i = null;
+  //int i = null;
   print("Enter the test cases");
 
   /// Used for taking inputs from user
